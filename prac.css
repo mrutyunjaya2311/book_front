@@ -4,49 +4,81 @@
 	margin:0;
 	color: white;
 }
-
+    
+body {
+	background: rgb(204,204,204); 
+  }
+page {
+	background: white;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 0.5cm;
+	box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  }
+page[size="A4"] {  
+	width: 21cm;
+	height: 29.7cm; 
+  }
 
 #back
 {
+    
 	background-color: black;
-	width: 650px;
-	height: 600px;
+	width: 21cm;
+	height: 29.7cm;
 	position: absolute;
-	left: 25%;
+	
 }
 
 #top
 {
-	height: 100px;
-	width: 360px;
-	background-color: red;
+	height: 180px;
+	width: 550px;
+	background-image: url("https://plus.unsplash.com/premium_photo-1677916317230-d9b78d675264?auto=format&fit=crop&q=80&w=1888&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    /* background-color: red; */
 	border-style: solid;
 	border-left: 2px;
 	border-top: 2px;
 	border-color: yellow;
 	border-bottom-right-radius:15% ;
 }
+#t{
+    text-transform: uppercase;
+    padding-bottom:70px;
+    padding-top: 38px;
+    letter-spacing: 2px;
+	font-size: 23px;
+	font-weight: 800;
+}
 
 
 #bottom
 {
-	height: 100px;
-	width: 360px;
+	height: 180px;
+	width: 550px;
 	position: absolute;
 	bottom: 0;
-	background-color: red;
+	background-color: rgba(32, 178, 171, 0.66);
 	border-style: solid;
 	border-left: 2px;
 	border-bottom: 2px;
 	border-color: yellow;
 	border-top-right-radius: 15%;
+	padding-left:30px;
+    font-size: 28px;
+	text-transform: capitalize;
 
 }
 .letter
 {
-	color: orange;
-	font-size: 30px;
+	color: rgba(255, 42, 0, 0.986);
+	font-size: 85px;
+    font-weight: 400;
 	text-transform: capitalize;
+    letter-spacing: 2px;
+	padding-left: 30px;
+
 }
 
 
@@ -55,4 +87,33 @@
 {
 	position: relative;
 	top: 20px;
+    font-weight: 100;
+
 }
+#b2
+{
+    text-transform: uppercase;
+    font-size: 35px;
+    position:absolute;
+    bottom: 0;
+    right: 30px;
+}
+ul{
+    list-style-type: square ;
+	
+}
+#b{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    font-weight: 400;
+	padding-top: 68px;
+	padding-left: 30px;
+}
+@media print {
+	body, page {
+	  background: white;
+	  margin: 0;
+	  box-shadow: 0;
+	}
+  }
